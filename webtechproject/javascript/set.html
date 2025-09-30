@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Sets</h1>
+<p>Create a set from an array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Set
+const letters = new Set(["a","b","e","c","a"]); 
+let person = new WeakSet();
+let name = {name:" vinut",age:23}
+let nanu = {name:" vijay",age:24}
+// Display set.size
+document.getElementById("demo").innerHTML = "The set has " + letters.size + " values.";
+letters.add("n")
+letters.clear()
+console.log(letters.keys)
+track(name);
+track(name);
+
+ function track(x){
+    if(person.has(x)){
+        console.log(" value is ther");
+    }else{
+        person=person.add(x)
+        console.log(" value is not there");
+    }
+ }
+</script>
+
+</body>
+</html>
+

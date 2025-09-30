@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+      background-size:cover;
+        background-image: url("https://c.pxhere.com/photos/39/83/astronomy_constellation_dark_galaxy_night_night_sky_orion_space-1563485.jpg!d");
+    }
+
+    
+
+    .main{
+        border: 1px solid #686868;
+        border-radius: 50%;
+
+    }
+    body .main:nth-child(1){
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid #000; */
+        position: absolute;
+        
+    }
+    body .main:nth-child(2){
+        width: 200px;
+        height: 200px;
+       
+        position: absolute;
+        animation-name: rotateing;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    body .main:nth-child(3){
+        width: 300px;
+        height: 300px;
+        
+        position: absolute;
+        animation-name: rotateing;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    body .main:nth-child(4){
+        width: 400px;
+        height: 400px;
+      
+        position: absolute;
+        animation-name: rotateing;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    body .main:nth-child(5){
+        width: 500px;
+        height: 500px;
+       
+        position: absolute;
+        animation-name: rotateing;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    body .main:nth-child(6){
+        width: 600px;
+        height: 600px;
+        
+        position: absolute;
+        animation-name: rotateing;
+        animation-duration: 12s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    body .main:nth-child(7){
+        width: 700px;
+        height: 700px;
+       
+        position: absolute;
+        animation-name: rotateing;
+        animation-duration: 14s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    body .main:nth-child(8){
+        width: 800px;
+        height: 800px;
+     
+        position: absolute;
+        animation-name: rotateing;
+        animation-duration: 16s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+     body .main:nth-child(9){
+        width: 900px;
+        height: 900px;
+        
+        position: absolute;
+        animation-name: rotateing;
+        animation-duration: 18s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    #sun{
+        background-size:150px;
+        background-position:  center;
+        border: none;
+        background-image: url("https://toppng.com/uploads/preview/sun-transparent-background-11549877996b3hvaflom7.png");
+        
+    }
+   
+
+
+    @keyframes rotateing {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+    }
+    </style>
+</head>
+<body>
+  
+    
+    <div class="main" id="sun">
+    </div>
+    <div class="main">
+        <img width="50px" src="https://www.pngall.com/wp-content/uploads/2/Mercury-Planet-PNG-Image-File.png" style="top: 20px; position: relative;" alt="">
+    </div>
+    <div class="main">
+        <img  width="55px" src="data:image/jpeg;base64,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" alt="" style="top: 30px; position: relative;" >
+    </div>
+    <div class="main">
+        <img  width="60px" src="https://pngimg.com/uploads/globe/globe_PNG100087.png" alt="" style="bottom: 10px;left: 100px; position: relative;" >
+    </div>
+    <div class="main">
+        <img  width="65px" src="https://th.bing.com/th/id/R.e800db2aab3a6e43de85507758fa37a5?rik=YRHCCtEIg047Ng&riu=http%3a%2f%2fwww.pngplay.com%2fwp-content%2fuploads%2f4%2fMars-PNG-Photo-Image.png&ehk=hESBVqJPGZnbngeXR0L7janwOoEHWxXei68fjbvE%2bcM%3d&risl=&pid=ImgRaw&r=0" alt="" style="top: 100px; left: 440px; position:  relative;" >
+    </div>
+    <div class="main">
+        <img  width="60px" src="https://png.pngtree.com/png-clipart/20240308/original/pngtree-isolated-realistic-jupiter-illustration-png-image_14534264.png" alt="" style="top: 400px; position: relative;" >
+    </div>
+    <div class="main">
+        <img  width="90px" src="https://www.pngarts.com/files/4/Saturn-PNG-Image.png" alt="" style="top: 160px;  position: relative;" >
+    </div>
+    <div class="main">
+        <img  width="60px" src="https://static.vecteezy.com/system/resources/previews/046/498/131/non_2x/uranus-planet-isolated-on-transparent-background-free-png.png" alt="" style="top: 150px; left: 700px;  position: relative;" >
+    </div>
+    <div class="main">
+        <img  width="60px" src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-beautiful-planet-neptune-png-image_13147657.png" alt="" style="top: 550px; right: 15px;  position: relative;" >
+    </div>
+    
+
+</body>
+</html>

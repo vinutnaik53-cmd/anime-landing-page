@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+      
+    }
+    #box1{
+        background-color: aqua;
+        transition: all 3s ease ;
+    }
+    #box1:hover{
+        width: 400px;
+    }
+     #box2{
+        background-color: rgb(10, 52, 52);
+        transition: all 3s ease-in ;
+    }
+    #box2:hover{
+        width: 400px;
+    }
+    #box3{
+        background-color: rgb(46, 66, 66);
+        transition: all 2s ease-out ;
+    }
+    #box3:hover{
+       transform: translate(200px);
+    }
+    #box4{
+        background-color: rgb(46, 66, 66);
+        transition: all 2s ease-out ;
+    }
+    #box4:hover{
+       transform: scale(2);
+    }
+    #box5{
+        background-color: rgb(46, 66, 66);
+        transition: all 2s ease-out ;
+    }
+    #box5:hover{
+       transform:matrix(2,0,0,2,200 ,200);
+    }
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div><br>
+    <div class="box" id="box2"></div><br>
+    <div class="box" id="box3"></div><br>
+    <div class="box" id="box4"></div><br>
+    <div class="box" id="box5"></div><br>
+   
+
+    
+</body>
+</html>

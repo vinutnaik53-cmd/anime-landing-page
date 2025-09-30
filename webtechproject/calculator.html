@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <section>
+        <div class="section-child1">
+            <input type="text" id="input" placeholder=" 0 ">
+        </div>
+
+
+        <div class="section-child2">
+             <div class="section-child2-container">
+                <div class="container-child1" id="clear">C</div>
+                <div class="container-child1">()</div>
+                <div class="container-child1">%</div>
+                <div class="container-child1">/</div>
+
+
+             </div>
+             <div class="section-child2-container">
+                <div class="container-child1">1</div>
+                <div class="container-child1">2</div>
+                <div class="container-child1">3</div>
+                <div class="container-child1">X</div>
+
+             </div>
+             <div class="section-child2-container">
+                <div class="container-child1">4</div>
+                <div class="container-child1">5</div>
+                <div class="container-child1">6</div>
+                <div class="container-child1">-</div>
+
+             </div>
+             <div class="section-child2-container">
+                <div class="container-child1">7</div>
+                <div class="container-child1">8</div>
+                <div class="container-child1">9</div>
+                <div class="container-child1">+</div>
+
+             </div>
+             <div class="section-child2-container">
+                <div class="container-child1">.</div>
+                <div class="container-child1">0</div>
+                <div class="container-child1">/</div>
+                <div class="container-child1" id="sum">=</div>
+
+             </div>
+             
+
+        </div>
+        
+    </section>
+    
+    <script>
+      let result = document.getElementById("input");
+      let btns = document.querySelectorAll(".container-child1");
+      let clear = document.getElementById ("clear")
+      let sum =document.getElementById("sum");  
+      
+        btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+   let num = btn.innerText;
+   let rem = clear.innerText;
+   let cl=sum.innerText;
+   console.log(rem);
+    if(num == rem){
+      result.value= " ";
+      
+    }else if( num==cl){
+        console.log(cl);
+        
+        let sum1=result.innerText;
+        let res= eval(sum1);
+        console.log(sum1);
+    }else{
+    result.value += btn.innerText;
+    }
+    
+  });
+});
+
+// sum.addEventListener("click",()=>{
+   
+//    let sum1=result.value;
+//    let res =eval(sum1);
+//     result.value=res;
+   
+//    console.log();
+
+   
+// })
+
+
+   
+      
+
+      
+        
+          
+
+        
+  
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        *{
+           padding: 0;
+           margin: 0; 
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <h1>signup</h1>
+    <br><br>
+    <h3>Username</h3>
+     <br>
+    <input type="text" id="username" placeholder="Enter username" >
+
+    
+    <br><br>
+    <h3>Password</h3>
+    <input type="password" id="password" placeholder="Enter Password">
+    <br><br>
+    <button onclick=funi()>signup</button>
+    </form>
+    <script>
+        function funi(){
+        let name =document.getElementById("username").value;
+       
+          let pass =document.getElementById("password").value;
+        let  stusername = localStorage.getItem("Username");
+        let  stpassword = localStorage.getItem("Password");
+        console.log(password)
+
+         if(stusername == name&&stpassword == pass){
+            alert("logged")
+
+         }else{
+            alert("not")
+         }
+          
+        }
+
+    </script>
+    
+</body>
+</html>

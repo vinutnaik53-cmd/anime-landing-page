@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px 30px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alert('hello')"> alert</button>
+    <button onclick="console.error('hello')"> error</button>
+    <button onclick="console.warn('hello')"> warn</button>
+    <button onclick="confirm('hello')"> confirm</button>
+    <button onclick="console.log('hello')"> print</button>
+     <button id="btn" onclick="color()"> print</button>
+     
+
+    <script>
+        let btn=document.getElementById("btn")
+        function color(){
+           
+
+                 btn.style.color="blue";
+           
+           
+        }
+    </script>
+    
+</body>
+</html>
